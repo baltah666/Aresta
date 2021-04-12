@@ -26,12 +26,12 @@ all:
                 leaf6:
                   ansible_host: 10.0.0.156
 
-            vtep4:
-              hosts:
-                leaf7:
-                  ansible_host: 10.0.0.157
-                leaf8:
-                  ansible_host: 10.0.0.158
+#            vtep4:
+#              hosts:
+#                leaf7:
+#                  ansible_host: 10.0.0.157
+#                leaf8:
+#                  ansible_host: 10.0.0.158
           vars:
             ansible_network_os: eos
         
