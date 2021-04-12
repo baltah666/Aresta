@@ -38,9 +38,9 @@ all:
         spines:
           hosts:
             spine1:
-              ansible_host: 10.0.0.140
-            spine2:
               ansible_host: 10.0.0.141
+            spine2:
+              ansible_host: 10.0.0.142
           vars:
             ansible_network_os: eos
         
