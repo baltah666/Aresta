@@ -24,9 +24,6 @@ bgp_neighbors:
 - neighbor: 10.0.2.15
   remote_as: 65004
   state: present
-- neighbor: 10.0.2.17
-  remote_as: 65005
-  state: present
 evpn_neighbors:
 - neighbor: 10.0.250.11
   remote_as: 65001
@@ -51,9 +48,6 @@ evpn_neighbors:
   state: present
 - neighbor: 10.0.250.18
   remote_as: 65004
-  state: present
-- neighbor: 10.0.250.19
-  remote_as: 65005
   state: present
 hostname: spine2
 interfaces:
@@ -88,9 +82,5 @@ interfaces:
 - address: 10.0.2.14
   description: leaf8
   interface: Ethernet8
-  mask: /31
-- address: 10.0.2.16
-  description: leaf9
-  interface: Ethernet9
   mask: /31
 loopback0_ip: 10.0.250.2
