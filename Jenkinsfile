@@ -58,12 +58,5 @@ ansible spines -m eos_command -a "commands='show vrf'"
 ansible leafs -m eos_command -a "commands='show vrf'" 
  """ 
 	}
-	stage ('Validation_Playbook - Build') {
- 			// Shell build step
-sh """ 
-cd ansible-arista-evpn-lab
-ansible-playbook validate_lab.yml -l spines -t evpn 
- """ 
-	}
 }
 }
